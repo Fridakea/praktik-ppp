@@ -1,0 +1,7 @@
+hr {
+    height: 1px;
+    width: 70%;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+    border-color: rgb(var(--color-text));
+}
