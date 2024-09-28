@@ -6,9 +6,7 @@ hr {
     border-color: rgb(var(--color-text));
 }
 
-.skill-tag {
-    
-    @apply h-2 w-3;
-
-    
+.vertical-line {
+    width: 1px;
+    background-color: rgb(var(--color-text));
 }
