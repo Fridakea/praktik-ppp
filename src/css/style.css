@@ -5,3 +5,10 @@ hr {
     margin-bottom: 1.5rem;
     border-color: rgb(var(--color-text));
 }
+
+.skill-tag {
+    
+    @apply h-2 w-3;
+
+    
+}

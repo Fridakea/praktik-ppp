@@ -67,12 +67,13 @@ h5 {
 
 h6 {
     width: fit-content;
-    padding: 4px 12px;
+    padding: 8px 16px;
     background-color: rgb(var(--color-text));
     border-radius: 5px;
 
+    text-align: center;
     text-transform: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: rgb(var(--color-primary));
 }
 
@@ -87,6 +88,12 @@ p {
 
     h5 {
         font-size: 1.5rem;
+    }
+
+    h6 {
+        padding: 8px 32px;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
     }
     
     p {

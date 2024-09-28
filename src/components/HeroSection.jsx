@@ -4,8 +4,8 @@ console.log(portrait1);
 export function HeroSection() {
 
     return (
-      <div>
-        <div className="hidden sm:block w-[75%] max-w-[1250px] h-[85%] absolute right-0 top-0 -z-10 bg-white"></div>
+      <div className='relative'>
+        <div className="hidden sm:block w-[75%] max-w-[1250px] h-[100%] absolute right-0 top-0 -z-10 bg-white mr-[-1rem]"></div>
 
         <div className='flex flex-col sm:flex-row-reverse sm:items-end sm:mb-16'>
           <div className='aspect-square w-[75%] bg-cover bg-secondary self-end mr-[-1rem] sm:w-[100%] sm:h-[100%]' style={{backgroundImage: `url(${portrait1})`}}></div>

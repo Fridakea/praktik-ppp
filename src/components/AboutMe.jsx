@@ -1,4 +1,12 @@
+import { useState } from "react";
+
+const tagContainerStyle ="my-4 mx-[-1rem] px-4 py-8 bg-secondary sm:mx-0";
+const tagsStyle = "max-w-[500px] flex flex-row justify-center flex-wrap gap-x-8";
+
 export function AboutMe() {
+  const [codetags, setCodetags] = useState(["HTML", "CSS", "JavaScript", "Astro", "React", "Next.js", "Tailwind CSS", "TypeScript", "Terminal Commands & node.js"]);
+  const [programtags, setProgramtags] = useState(["VS Code", "GitHub", "Figma", "Supabase", "Netlify"]);
+  const [adobetags, setAdobetags] = useState(["Illustrator", "Photoshop", "Lightroom", "Premier Pro"]);
 
     return (
       <div>
@@ -12,18 +20,33 @@ export function AboutMe() {
             </div>
         </div>
 
-        <div className="code">
-            <h3 className="text-center">Kode færdigheder</h3>
-            <div className="tags">
-                <h6>HTML</h6>
-                <h6>CSS</h6>
-                <h6>JavaScript</h6>
-                <h6>Astro</h6> 
-                <h6>React</h6>
-                <h6>Next.js</h6>
-                <h6>Tailwind CSS</h6>
-            </div>
+        <div className="my-8 flex flex-col sm:flex-row items-center sm:gap-16">
+          <div className={`${tagContainerStyle}`}>
+              <h3 className="text-center">Kode færdigheder</h3>
+              <div className={tagsStyle}>
+                {
+                  codetags.map((nextCodetag) => <h6 key={nextCodetag}>{nextCodetag}</h6>)
+                }
+              </div>
+          </div>
+
+          <div className={tagContainerStyle}>
+              <h3 className="text-center">Programmer</h3>
+              <div className={tagsStyle}>
+                {
+                  programtags.map((nextProgramtag) => <h6 key={nextProgramtag}>{nextProgramtag}</h6>)
+                }
+              </div>
+
+              <h3 className="text-center">Adobe</h3>
+              <div className={tagsStyle}>
+                {
+                  adobetags.map((nextAdobetag) => <h6 key={nextAdobetag}>{nextAdobetag}</h6>)
+                }
+              </div>
+          </div>
         </div>
+
       </div>
     );
   }
