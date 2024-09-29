@@ -10,7 +10,7 @@ export function App() {
 
   useEffect(() => {
     const value = localStorage.getItem('dark-mode');
-    setIsDarkMode(value != null && value == "true");
+    setIsDarkMode(value != null && value === "true");
   }, [])
 
   return (

@@ -1,8 +1,6 @@
 import { education, educationYear, educationYearExtended, work, workYear, workYearExtended } from "../data/lists";
 import { Timeline } from "./Timeline";
 
-const timelineStyling = "flex flex-row gap-8";
-
 export function CvSection() {
 
     return (
