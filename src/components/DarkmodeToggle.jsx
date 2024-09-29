@@ -12,11 +12,11 @@ export function DarkmodeToggle() {
 
     return (
         <>
-            <button onClick={toggleMode} className="dark-mode-toggle dark-mode-hide">
+            <button onClick={toggleMode} className="dark-mode-toggle dark-mode-hide hover:scale-110 ease-in-out duration-200">
                 {darkmodeIcon}
             </button>
 
-            <button onClick={toggleMode} className="dark-mode-toggle dark-mode-only">
+            <button onClick={toggleMode} className="dark-mode-toggle dark-mode-only hover:scale-110 ease-in-out duration-200">
                 {lightmodeIcon}
             </button>
         </>

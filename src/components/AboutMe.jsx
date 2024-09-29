@@ -2,6 +2,7 @@ import { codetags, programtags, adobetags } from "../data/lists";
 
 const tagContainerStyle = "my-4 mx-[-1rem] px-4 py-8 bg-secondary sm:mx-0";
 const tagsStyle = "max-w-[500px] flex flex-row justify-center flex-wrap gap-x-8";
+const tagHoverStyling = "hover:scale-110 ease-in-out duration-200 hover:bg-text/75"
 
 export function AboutMe() {
 
@@ -23,7 +24,7 @@ export function AboutMe() {
               <h3 className="text-center">Kode færdigheder</h3>
               <div className={tagsStyle}>
                 {
-                  codetags.map((nextCodetag) => <h6 key={nextCodetag}>{nextCodetag}</h6>)
+                  codetags.map((nextCodetag) => <h6 className={tagHoverStyling} key={nextCodetag}>{nextCodetag}</h6>)
                 }
               </div>
           </div>
@@ -32,14 +33,14 @@ export function AboutMe() {
               <h3 className="text-center">Programmer</h3>
               <div className={tagsStyle}>
                 {
-                  programtags.map((nextProgramtag) => <h6 key={nextProgramtag}>{nextProgramtag}</h6>)
+                  programtags.map((nextProgramtag) => <h6 className={tagHoverStyling} key={nextProgramtag}>{nextProgramtag}</h6>)
                 }
               </div>
 
               <h3 className="text-center">Adobe</h3>
               <div className={tagsStyle}>
                 {
-                  adobetags.map((nextAdobetag) => <h6 key={nextAdobetag}>{nextAdobetag}</h6>)
+                  adobetags.map((nextAdobetag) => <h6 className={tagHoverStyling} key={nextAdobetag}>{nextAdobetag}</h6>)
                 }
               </div>
           </div>
