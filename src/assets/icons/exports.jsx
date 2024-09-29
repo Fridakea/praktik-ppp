@@ -25,7 +25,7 @@ export const instagramIcon = (
 )
 
 export const darkmodeIcon = (
-    <svg width="35" height="45" viewBox="0 0 33 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="45" height="55" viewBox="0 0 33 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 31.7143C26.9173 31.7143 31.7143 26.9173 31.7143 21C31.7143 15.0827 26.9173 10.2857 21 10.2857C15.0827 10.2857 10.2857 15.0827 10.2857 21C10.2857 26.9173 15.0827 31.7143 21 31.7143Z" fill="#E1EAE5" stroke="#9E372E" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M21 4.57143V1" stroke="#9E372E" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M9.37504 9.375L6.85718 6.85714" stroke="#9E372E" strokeLinecap="round" strokeLinejoin="round"/>
@@ -37,7 +37,7 @@ export const darkmodeIcon = (
 )
 
 export const lightmodeIcon = (
-    <svg width="35" height="45" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="45" height="55" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.4286 10.2857C5.51126 10.2857 0.714313 15.0827 0.714313 21C0.714312 26.9173 5.51126 31.7143 11.4286 31.7143C17.3459 31.7143 22.1429 26.9173 22.1429 21C22.1429 15.0827 17.3459 10.2857 11.4286 10.2857Z" fill="#1F2D25" stroke="#D5756D" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M11.4286 37.4286L11.4286 41" stroke="#D5756D" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M23.0536 32.625L25.5714 35.1429" stroke="#D5756D" strokeLinecap="round" strokeLinejoin="round"/>

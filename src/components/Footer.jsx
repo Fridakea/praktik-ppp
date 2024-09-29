@@ -7,7 +7,7 @@ export function Footer() {
         <section className="px-4 py-10 bg-secondary sm:px-8 sm:py-12">
             <div className="max-w-[1150px] mx-auto flex flex-col sm:flex-row">
             <div className="flex-1">
-                <p>FRIDA ALBERTE BENDORFF</p>
+                <p><strong>FRIDA ALBERTE BENDORFF</strong></p>
                 <p>fridabendorff@gmail.com</p>
                 <p>+45 2784 0455</p>
             </div>

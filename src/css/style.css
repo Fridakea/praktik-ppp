@@ -12,11 +12,11 @@
     }
 }
 
-button {
-    top: 24px;
+.dark-mode-toggle {
+    top: 25px;
     right: 24px;
     position: fixed;
-    z-index: 10;
+    z-index: 30;
 }
 
 hr {
@@ -32,11 +32,8 @@ hr {
     background-color: rgb(var(--color-text));
 }
 
-@media (min-width: 750px) {
-    button {
-        position: relative;
-        margin-left: 97.5%;
-        margin-top: -8px;
-        margin-bottom: 40px;
+@media (min-width: 1210px) {
+    .dark-mode-toggle {
+        right: calc(50% - 550px);
     }
 }
