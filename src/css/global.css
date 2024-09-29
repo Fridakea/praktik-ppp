@@ -7,33 +7,36 @@
 @layer base {
     :root {
         /* Color variables */
+        --color-primary-tint: 240 245 242;
         --color-primary: 225 234 229;
         --color-secondary: 164 192 176;
         --color-text: 31 45 37;
-        --color-action: 173 66 57;
+        --color-action: 158 55 46;
     }
     
     .dark-mode {
         /* Color variables for dark mode */
-        --primary-color-shade: #000000;
-        --primary-color: #1F2D25;
-        --secondary-color: #344B3E;
-        --text-color: #E1EAE5;
-        --action-color: #C65B52;
+        --color-primary-tint: 21 30 25;
+        --color-primary: 31 45 37;
+        --color-secondary: 52 75 62;
+        --color-text: 225 234 229;
+        --color-action: 213 117 109;
     }
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(var(--color-primary));
+#app {
+    position: relative;
+    z-index: -20;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(var(--color-primary));
 
-  font-family: "Hind Vadodara", sans-serif;
-  color: rgb(var(--color-text));
+    font-family: "Hind Vadodara", sans-serif;
+    color: rgb(var(--color-text));
 }
 
-h1, h2, h3, h4, h5, h6, a, button {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   text-transform: uppercase;

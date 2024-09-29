@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primaryTint: "rgb(var(--color-primary-tint))",
         primary: "rgb(var(--color-primary))",
         secondary: "rgb(var(--color-secondary))",
         text: "rgb(var(--color-text))",

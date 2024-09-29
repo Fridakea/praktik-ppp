@@ -1,3 +1,24 @@
+.dark-mode-only {
+    display: none;
+}
+
+.dark-mode {
+    & .dark-mode-only {
+        display: block;
+    }
+
+    & .dark-mode-hide {
+        display: none;
+    }
+}
+
+button {
+    top: 24px;
+    right: 24px;
+    position: fixed;
+    z-index: 10;
+}
+
 hr {
     height: 1px;
     width: 70%;
@@ -9,4 +30,13 @@ hr {
 .vertical-line {
     width: 1px;
     background-color: rgb(var(--color-text));
+}
+
+@media (min-width: 750px) {
+    button {
+        position: relative;
+        margin-left: 97.5%;
+        margin-top: -8px;
+        margin-bottom: 40px;
+    }
 }
